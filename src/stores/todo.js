@@ -29,7 +29,6 @@ export const useToDoStore = defineStore('todo', {
         this.todos.forEach(elem => {
             this.delTodo(elem.id)
         })
-        this.todos = []
     },
     async delTodo(id) {
         try {
